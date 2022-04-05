@@ -1,0 +1,25 @@
+POST localhost:8888/signUp
+Content-Type: application/json
+
+{
+  "accountId": "test1",
+  "name": "test",
+  "password": "123",
+  "permission": "MEMBER",
+  "email": "test@test.com"
+}
+###
+
+POST localhost:8888/signIn
+Content-Type: application/json
+
+{
+  "accountId": "test1",
+  "password": "123"
+}
+###
+
+GET localhost:8888/accounts/test1
+###
+
+GET localhost:8888/accounts
